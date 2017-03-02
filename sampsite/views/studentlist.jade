@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h3.
+    Students
+  ul
+    each name, i in studentlist
+      li#student_list_item
+        a(href='#') #{name.name} lives at #{name.street} #{name.city}, #{name.state}
